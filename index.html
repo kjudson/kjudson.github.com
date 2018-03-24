@@ -1,6 +1,8 @@
 <html>
 <head>
   <title>kjudson</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
     crossorigin="anonymous"></script>
   <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
@@ -10,6 +12,7 @@
       border-top: 4px solid #00B3E0;
       margin: 0;
       padding: 0;
+      text-align: center;
     }
 
     h1, h2, h3 {
@@ -32,12 +35,37 @@
 
     a {
       padding: 10px;
+      text-decoration: none;
     }
     a:link, a:hover, a:visited, a:active {
       color: #444;
     }
     a:hover {
       color: #00B3E0;
+    }
+    a span {
+      display: none;
+    }
+
+    @media all and (max-width: 699px) {
+      .page-title {
+        font-size: 50px;
+      }
+      p {
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        text-align: left;
+        width: fit-content;
+      }
+      a {
+        font-size: 30px;
+        display: block;
+      }
+      a span {
+        display: inline;
+        font-size: 30px;
+      }
     }
   </style>
 
@@ -47,7 +75,14 @@
   <h1 class="page-title">Kevin Judson</h1>
 
   <p>
-    <a href="http://www.linkedin.com/in/kjudson/"><i class="fab fa-linkedin"></i></a><a href="http://www.github.com/kjudson/"><i class="fab fa-github"></i></a>
+    <a href="http://www.linkedin.com/in/kjudson/">
+      <i class="fab fa-linkedin"></i>
+      <span>LinkedIn</span>
+    </a>
+    <a href="http://www.github.com/kjudson/">
+      <i class="fab fa-github"></i>
+      <span>GitHub</span>
+    </a>
   </p>
 </body>
 
